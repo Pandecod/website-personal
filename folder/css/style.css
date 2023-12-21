@@ -321,8 +321,9 @@ h3 {
   }
   .benner .content {
     display: block;
-    margin: 180px auto;
+    margin: 160px auto 0 auto;
     text-align: center;
+    z-index: 9;
   }
   .portofolio::after {
     display: none;
@@ -332,5 +333,26 @@ h3 {
   }
   .socials a {
     margin: 20px 30px;
+  }
+}
+@media (max-width: 646px) {
+  h1 {
+    font-size: 30px;
+  }
+  /* .about p {
+    margin: 10px 0;
+  }
+  .about h3 {
+    font-size: 40px;
+  } */
+  p {
+    font-size: 20px;
+  }
+  .background-video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    z-index: -100;
   }
 }
